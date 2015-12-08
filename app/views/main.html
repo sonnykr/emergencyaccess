@@ -1,0 +1,40 @@
+
+<input type="text" ng-model="city">
+<a class="btn btn-primary" ng-click="getData(city)">Fetch</a>
+
+<br />
+Load weather for <b>{{city}}</b>
+
+<br /><br /><br />
+<p>
+    {{weatherData}}
+    <br />
+    <div class="row">
+      <div class="col-md-3">Temp</div>
+      <div class="col-md-3">{{weatherData.main.temp}}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">pressure</div>
+      <div class="col-md-3">{{weatherData.main.pressure}}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">humidity</div>
+      <div class="col-md-3">{{weatherData.main.humidity}}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">temp_min</div>
+      <div class="col-md-3">{{weatherData.main.temp_min}}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">temp_Max</div>
+      <div class="col-md-3">{{weatherData.main.temp_max}}</div>
+    </div>
+
+</p>
+
+
+<br /><br /><br />
